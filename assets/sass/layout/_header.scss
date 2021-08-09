@@ -1,0 +1,111 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: url(../assets/img/testimonial/header.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    
+    &::before {
+        background: rgba(0, 0, 0, 0.6);
+      }
+    .container__header {
+        display: inline-block;
+        width: 1200px;
+        margin: 0px 10px 0px 10px;
+        @media only screen and (max-width: $xl) {
+        margin: 0px 6px 0px 6px;
+       }
+       .text__wrap {
+           display: inline-block;
+           width: 100%;
+           span {
+               display: block;
+               text-align: center;
+               float: left;
+               width: 100%;
+               font-size: 24px;
+               font-family: 'Raleway', sans-serif;
+               color: #bdbdbd;
+               font-weight: 400;
+               margin-bottom: 20px;
+               @media (max-width:$sm) {
+               display: block;
+               text-align: center;
+               font-size: 16px;
+               font-weight: 400;
+               font-family: 'Raleway', sans-serif;
+            }
+           }
+           h1 {
+            display: block;
+            float: left;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 64px;
+            margin: 30px;
+            font-weight: 900;
+            @media (max-width:$sm) {
+                width: 100%;
+                text-align: center;
+                font-size: 32px;
+                font-weight: 900;
+                font-family: 'Raleway', sans-serif;
+                color: #fff;
+             }
+           }
+           p {
+            display: block;
+            float: left;
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+            font-family: 'Raleway', sans-serif;
+            color: #bdbdbd;
+            font-size: 20px;
+            font-weight: 700;
+            @media (max-width:$sm) {
+                width: 100%;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 900;
+                font-family: 'Raleway', sans-serif;
+                color: #bdbdbd;
+             }
+           }
+       }
+       .icon__wrap {
+           display: inline-block;
+           width: 100%;
+           text-align: center;
+           a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            color: white;
+            &:hover {
+                background-color: #9c27b0;
+                transition: .7s;
+             }
+            .fa {
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                padding-top: 17px;
+            }
+         }
+       }
+    }
+}

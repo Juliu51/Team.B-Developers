@@ -1,0 +1,200 @@
+.resume {
+    width: 100%;
+    padding: 100px 5px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    // width: 100%;
+    // padding: 100px 20px 100px 20px;
+    
+    .resume__container {
+        display: block;
+        width: 100%;
+        max-width: 1200px;
+        display: inline-block;
+        padding: 2px 0;
+        height: 100%;
+        @media (max-width: $xl) {
+         width: 98%;
+        }
+
+        @media (max-width: $md) {
+            // margin-left: 60px;
+            margin-right: 60px;
+          }
+
+        .resume__title {
+            font-size: 2.2rem;
+            text-transform: capitalize;
+            text-shadow: 2px 4px 3px rgba(151, 151, 151, 0.219);
+            display: block;
+            border-bottom: 1px solid #fff;
+            font-weight: 800;
+            color: #484848;
+            display: inline-block;
+            padding-bottom: 100px;
+            text-align: center;
+            width: 100%;
+
+            span {
+                color: #9c27b0;
+                border-bottom: 1px solid #9c27b0;
+                padding-bottom: 10px;
+                display: inline-block;
+            }
+        }
+
+        .left {
+            text-align: left;
+            margin-left: 30px;   
+
+            @media (max-width: $md) {
+                margin-left: 0px; 
+                padding-left: 30px;
+              }
+        }
+
+        .right {
+            text-align: right;
+            margin-right: 30px;
+
+            @media (max-width: $md) {
+                text-align: left;
+                margin-right: 0px;
+                padding-left: 30px;
+              }
+        }
+
+        .border__left {
+            border-left: 1px solid #e5ebf0;
+            span {
+                margin-left: -36px;
+                font-size: 25px;
+                padding-top: -55px;
+                position: absolute;
+                background-color: #2e353e;
+                height: 12px;
+                width: 12px;
+                margin-top: 8px;
+                border-radius: 50%;
+                border: 2px solid #d6b161;
+            }
+
+
+            
+        }
+
+        .border__right {
+            border-right: 1px solid #e5ebf0;
+            direction: rtl;
+
+            
+            @media (max-width: $md) {
+                direction:inherit;
+              }
+
+            span {
+                margin-right: -36px;
+                margin-left: 28px;
+                width: 12px;
+                padding-top: -55px;
+                position: absolute;
+                background-color: #2e353e;
+                height: 12px;
+                margin-top: 8px;
+                border-radius: 50%;
+                border: 2px solid #d6b161;
+
+                @media (max-width: $md) {
+                    margin-left: -36px;
+                }
+            }
+            @media (max-width: $md) {
+                border-right: 0px solid #e5ebf0;
+                border-left: 1px solid #e5ebf0;
+                
+              }
+        }
+
+        .resume__column1,
+        .resume__column2
+         {
+            width: 45%;
+            display: inline-block;
+            padding-bottom: 60px;
+
+            @media (max-width: $md) {
+                width: 100%;
+              }
+            
+            .resume__icon {
+                background-color: #2e353e;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                margin-top: -40px;
+                text-align: center;
+                color: white;
+            }
+
+            .icon__right {
+                margin-right: -20px;
+                float: right;
+                @media (max-width: $md) {
+                    float: left;
+                    margin-right: 0px;
+                    margin-left: -20px;
+                }
+            }
+
+            .icon__left {
+                margin-left: -20px;
+                float: left;
+            }
+
+            
+            .box__row {
+                padding: 30px 30px 10px;
+                width: 100%;
+                
+
+                
+
+                .row__date {
+                    font-size:0.8rem;
+                    font-weight: 500;
+                    font-family:'Roboto', sans-serif;
+                    // direction:rtl;
+                    // margin-right: -30px;
+                    // text-indent:80px;
+
+
+
+                }
+
+                .row__spec {
+                    color: #9c27b0;
+                    font-size: .9rem;
+                    font-weight: 600;
+                    margin-top:15px;
+                    text-transform:uppercase;
+                    
+
+                }
+
+                .row__univ {
+                    color:#4b4b4b;
+                    font-size:0.8rem;
+                    font-weight: 600;
+                    text-transform:capitalize
+                }
+
+                
+            }
+
+
+
+        }
+    }
+}

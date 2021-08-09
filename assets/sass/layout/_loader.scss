@@ -1,0 +1,81 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #333;
+  z-index: 999999999999;
+  .loader__inner {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto;
+    .pacman {
+      position: relative;
+      width: 160px;
+      height: 160px;
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border: 80px solid #fff;
+        border-radius: 50%;
+        border-right: 80px solid transparent;
+        animation: pacmanAnimate1 linear .5s infinite;
+      }
+      &::after {
+        animation: pacmanAnimate2 linear .5s infinite;
+      }
+      div {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          background-color:  #fff;
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -100px;
+          opacity: 0;
+        }
+        &:nth-child(1) {
+          animation: ball 1s 1s infinite linear;
+        }
+        &:nth-child(2) {
+          animation: ball 1s .5s infinite linear;
+          
+        }
+        &:nth-child(3) {
+          animation: ball 1s 0s infinite linear;
+          
+        }
+      }
+    }
+    @keyframes pacmanAnimate1 {
+      0% {transform: rotate(270deg);}
+      50% {transform: rotate(360deg);}
+      100% {transform: rotate(270deg);}
+    }
+    @keyframes pacmanAnimate2 {
+      0% {transform: rotate(90deg);}
+      50% {transform: rotate(0deg);}
+      100% {transform: rotate(90deg);}
+    }
+    @keyframes ball {
+      20%, 80% {opacity: 1;}
+      100% {transform: translate(-120px, -50%);}
+    }
+  }
+}

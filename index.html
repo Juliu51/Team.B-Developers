@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="./css/app.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>new theme</title>
+  </head>
+  <body>
+<!-- Wrapper -->
+  <div class="wrapper">
+    <!-- Loader -->
+    <div class="preloader"> 
+      <div class="loader__inner">
+          <div class="pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      </div>
+    </div>
+    <!-- Loader END -->
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container__navigation">
+        <div class="logo">
+          <a class="navbar__brand" href="#"> 
+            <img class="new__logo"src="./assets/img/testimonial/logo-2.png" alt="logo-2">
+            <!-- Logo -->
+          </a>
+        </div>
+        <div class="navbar__menu">
+          <ul class="nav__text">
+            <li class="navbar__items"><a class="home__color"href="#">Home</a></li>
+            <li class="navbar__items"><a href="#about">About</a></li>
+            <li class="navbar__items"><a href="#services">Services</a></li>
+            <li class="navbar__items"><a href="#portfolio">Portfolio</a></li>
+            <li class="navbar__items"><a href="#client">Client</a></li>
+            <li class="navbar__items"><a href="#blog">Blog</a></li>
+            <li class="navbar__items"><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation END -->
+    <!-- Header -->
+    <header class="header parallax">
+      <div class="container__header">
+        <div class="text__wrap">
+        <span>WELLCOME</span>
+        <h1>I AM JOHN DOE</h1>
+        <p>web developer</p>
+        </div>
+        <div class="icon__wrap">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </header>
+    <!-- Header END -->
+    <!--  About section  -->
+    <div class="about section__padding" id="about">
+      <div class="container__about">
+        <div class="img__wrap">
+          <div class="img"></div>
+        </div>
+        <div class="text__wrap">
+          <div class="text__box">
+          <h3 class="text__title"><span>about</span> me</h3>
+            <p class="text__mid">I AM A UI/UX DESIGNER AND A HUMAN</p>
+            <p class="text__main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum mollitia porro itaque, error animi! Asperiores quaerat non quibusdam fuga magni, nemo, esse, doloremque tenetur quia at eius sapiente. Ex ut exercitationem beatae repellendus! Qui, porro?</p>
+            <div class="data__left">
+              <div class="about__name about__fix">Name: <span> John Doe</span></div>
+              <div class="about__age about__fix">Age: <span> 27</span></div>
+            </div>
+            <div class="data__right">
+              <div class="about__email about__fix">Email: <span> John_Doe@gmail.com</span></div>
+              <div class="about__location about__fix">LOCATION: <span> Los Angeles, USA</span></div>
+            </div>
+          </div>
+          <div class="left__button"><button class="left__buttonl button__fix">download resume</button></div>
+          <div class="right__button"><button class="right__buttonr button__fix">hire me</button></div>
+        </div>
+      </div>
+    </div>
+    <!--  About section END -->
+    <!--  Skills section  -->
+    <div class="skills ">
+      <div class="skills__container"></div>
+      </div>
+    </div>
+    <!--  Skills section END -->
+    <!--  Resume section  -->
+    <div class="resume">
+      <div class="resume__container"></div>
+    </div>
+    <!--  Resume section END -->
+    <!--  Counter section  -->
+    <div class="counter">
+      <div class="counter__extracontainer">
+        <div class="counter__container"></div>
+      </div>
+    </div>
+    <!--  Counter section END -->
+    <!-- My SERVICES section-->
+    <div class="services section__padding" id="services">
+      <div class="services__container">
+        <div class="services__table">
+          <div class="services__title">
+            <h4>
+              <span>My</span> Services 
+            </h4>
+          </div>
+          <div class="items">
+            <!--items/items-->
+          </div>
+        </div>  
+      </div>
+    </div>
+    <!--My services END-->
+    <!--  Portfolio section  -->
+    <div class="portfolio section__padding" id="portfolio">
+      <div class="portfolio__container">
+        <div class="portfolio__table">
+          <div class="portfolio__title col-sm-12">
+            <h4>
+              <span>My</span> Portfolio 
+            </h4>
+          </div>
+          <div class="part col-sm-12">
+            <div class="portfolio__nav col-sm-12" id="filter-buttons">
+              <button class="btn active" onclick="filterSelection('all')">All</button>
+              <button class="btn" onclick="filterSelection('brand')">Brand</button>
+              <button class="btn" onclick="filterSelection('design')">Design</button>
+              <button class="btn" onclick="filterSelection('photo')">Photo</button>
+              <button class="btn" onclick="filterSelection('video')">Video</button>
+              
+            </div>
+            <div class="portfolio-gallery col-sm-12" id="portfolio-gallery">
+              <div class="portfolio__items row">
+                <div class="grid-item item-1 video">                  
+                  <figure class="figureit" id="figurelayover" onmouseover="mouseOver()">
+                    <img src="./assets/img/portfolio/1.jpeg" alt="">  
+                    <div class="item-img-overlay" >
+                      <div class="overlay-info v-middle text-center">
+                        <figcaption class="fig-caption">
+                          <h5 class="title">Web Design</h5>
+                          <span class="icon">
+                            <a href="#0">
+                              <span class="zmdi zmdi-link"></span>
+                            </a>  
+                          </span>
+                          <span class="icon link">
+                            <a href="./assets/img/portfolio/1.jpeg"> 
+                              <span class="zmdi zmdi-gps-dot"></span>
+                            </a>  
+                          </span>  
+                          <span class="sub-title">Video</span>
+                        </figcaption>
+                      </div>  
+                    </div>  
+                  </figure>
+                </div>
+                <div class="grid-item item-2 design">
+                  <figure class="figureit" >
+                    <img src="./assets/img/portfolio/2.jpeg" alt="">
+                    <div class="item-img-overlay">
+                      <div class="overlay-info v-middle text-center">
+                        <figcaption class="fig-caption">
+                          <h5 class="title">Web Design</h5>
+                          <span class="icon">
+                            <a href="#0">
+                              <span class="zmdi zmdi-link"></span>
+                            </a>  
+                          </span>
+                          <span class="icon link">
+                            <a href="./assets/img/portfolio/2.jpeg"> 
+                              <span class="zmdi zmdi-gps-dot"></span>
+                            </a>  
+                          </span> 
+                          <span class="sub-title">Design</span>
+                        </figcaption>
+                      </div>
+                    </div>  
+                  </figure>
+                </div>
+                <div class="grid-item item-3 photo">
+                  <figure class="figureit">
+                    <img src="./assets/img/portfolio/3.jpeg" alt="">
+                    <div class="item-img-overlay">
+                      <div class="overlay-info v-middle text-center">
+                        <figcaption class="fig-caption">
+                          <h5 class="title">Web Design</h5>
+                          <span class="icon">
+                            <a href="#0">
+                              <span class="zmdi zmdi-link"></span>
+                            </a>  
+                          </span>
+                          <span class="icon link">
+                            <a href="./assets/img/portfolio/3.jpeg"> 
+                              <span class="zmdi zmdi-gps-dot"></span>
+                            </a>  
+                          </span> 
+                          <span class="sub-title">Photo</span>
+                        </figcaption>
+                      </div>  
+                    </div>  
+                  </figure>
+                </div>
+                <div class="grid-item item-4 design">
+                  <figure>
+                    <img src="./assets/img/portfolio/4.jpeg" alt="">
+                    <div class="item-img-overlay">
+                      <div class="overlay-info v-middle text-center">
+                        <figcaption class="fig-caption">
+                          <h5 class="title">Web Design</h5>
+                          <span class="icon">
+                            <a href="#0">
+                              <span class="zmdi zmdi-link"></span>
+                            </a>  
+                          </span>
+                          <span class="icon link">
+                            <a href="./assets/img/portfolio/4.jpeg"> 
+                              <span class="zmdi zmdi-gps-dot"></span>
+                            </a>  
+                          </span> 
+                          <span class="sub-title">Design</span>
+                        </figcaption>
+                      </div>
+                   </div>  
+                  </figure>
+                </div>
+                <div class="grid-item item-5 brand">
+                  <figure>
+                    <img src="./assets/img/portfolio/6.jpeg" alt="">
+                    <div class="item-img-overlay">
+                      <div class="overlay-info v-middle text-center">
+                        <figcaption class="fig-caption">
+                          <h5 class="title">Web Design</h5>
+                          <span class="icon">
+                            <a href="#0">
+                              <span class="zmdi zmdi-link"></span>
+                            </a>  
+                          </span>
+                          <span class="icon link">
+                            <a href="./assets/img/portfolio/6.jpeg"> 
+                              <span class="zmdi zmdi-gps-dot"></span>
+                            </a>  
+                          </span> 
+                          <span class="sub-title">Brand</span>
+                        </figcaption>
+                      </div>  
+                    </div>  
+                  </figure>
+                </div>
+                <div class="grid-item item-6 photo">
+                  <figure>
+                    <img src="./assets/img/portfolio/5.jpeg" alt="">
+                    <div class="item-img-overlay">
+                      <div class="overlay-info v-middle text-center">
+                        <figcaption class="fig-caption">
+                          <h5 class="title">Web Design</h5>
+                          <span class="icon">
+                            <a href="#0">
+                              <span class="zmdi zmdi-link"></span>
+                            </a>  
+                          </span>
+                          <span class="icon link">
+                            <a href="./assets/img/portfolio/5.jpeg"> 
+                              <span class="zmdi zmdi-gps-dot"></span>
+                            </a>  
+                          </span> 
+                          <div class="sub-title">Photo</div>
+                        </figcaption>
+                      </div>  
+                    </div>  
+                  </figure>
+                </div>
+                <div class="grid-item item-7 brand">
+                  <figure>
+                    <img src="./assets/img/portfolio/7.jpeg" alt="">
+                    <div class="item-img-overlay">
+                      <div class="overlay-info v-middle text-center">
+                        <figcaption class="fig-caption">
+                          <h5 class="title">Web Design</h5>
+                          <span class="icon">
+                            <a href="#0">
+                              <span class="zmdi zmdi-link"></span>
+                            </a>  
+                          </span>
+                          <span class="icon link">
+                            <a href="./assets/img/portfolio/5.jpeg"> 
+                              <span class="zmdi zmdi-gps-dot"></span>
+                            </a>  
+                          </span> 
+                          <span class="sub-title">Brand</span>
+                        </figcaption>
+                      </div>  
+                    </div>  
+                  </figure>
+                </div> 
+                <div class="grid-item item-8 video">
+                  <figure>
+                    <img src="./assets/img/portfolio/8.jpeg" alt="">
+                    <div class="item-img-overlay">
+                      <div class="overlay-info v-middle text-center">
+                        <figcaption class="fig-caption">
+                          <h5 class="title">Web Design</h5>
+                          <span class="icon">
+                            <a href="#0">
+                              <span class="zmdi zmdi-link"></span>
+                            </a>  
+                          </span>
+                          <span class="icon link">
+                            <a href="./assets/img/portfolio/8.jpeg"> 
+                              <span class="zmdi zmdi-gps-dot"></span>
+                            </a>  
+                          </span> 
+                          <span class="sub-title">Video</span>
+                        </figcaption>
+                      </div>  
+                    </div>  
+                  </figure>
+                </div>
+
+              </div>
+            </div> 
+          </div>  
+          
+        </div>  
+      </div>    
+    </div>      
+    <!--  Portfolio section END -->
+    <!--  Testimonial section  -->
+    <div class="testimonial section__padding" data-scroll-index="3" id="client">
+      <div class="testimonials__extracontainer">
+        <div class="testimonial__container">
+          <div class="testimonial__row">
+            <div class="testimonial__box">  
+              <div class="owl__carousel">
+                <div class="owl-row-outer" >
+                  <!-- JS RENDER-->
+                </div>
+                <div class="dots__container">
+                  <!--Js render-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <!--  Testimonial section END -->
+    <!--  Blog section  -->
+    <div class="blog section-padding" id="blog">
+      <div class="container">
+        <div class="Blog_lentele">
+          <div class="Blog_title">
+            <h4>
+            <span>latest</span> blog
+          </h4></div>
+          <div class="Blog_info"></div>
+        </div>
+      </div>
+    </div>
+    <!--  Blog section END -->
+    <!--  Contact section  -->
+    <div class="contact section-padding" id="contact">
+      <div class="container">
+        <div class="lentele">
+          <div class="contact_left">
+            <div class="Contact_forma">
+              <div class="Cforma_pavadinimas">
+                <h4><span>Get</span> In Touch</h4>
+              </div>
+              <form action="" class="Cforma_info">
+                  <div class="Contact_Left_cart">
+                      <label for="text" class="labelC"><i class="zmdi zmdi-account"></i></label>
+                      <input type="text" placeholder="Your Full Name Here" name="name" id="" class="inputC">
+                  </div>
+                  <div class="Contact_Left_cart">
+                    <label for="email" class="labelC"><i class="zmdi zmdi-email"></i></label>
+                    <input type="email" name="email" placeholder="Your Email Here" class="inputC">
+                </div>
+                <div class="Contact_Left_cart tekstas textarea__action">
+                    <label for="" class="labelC"><i class="zmdi zmdi-comment"></i></label>
+                    <textarea placeholder="Message For Me" rows="4" class="textarea_C" name="textarea"></textarea>
+                </div>
+                  <div class="Contact_Left_Button">
+                      <button class="button hvr-shutter-out-horizontal">Send message</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+          <div class="contact_right">
+            <div class="Cright_tekstas">
+              <div class="Contact_head">
+                <h4>contact info.</h4>
+                <p>Lorem ipsum dolor sit amet, sit augue theophrastus ex. Nec ne dicam impedit perpetua, legimus fierent molestiae ei nec.</p>
+              </div>
+              <div class="Contact_tel">
+                <label class="Contact_anime"><i class="zmdi zmdi-headset-mic"></i></label>
+                <h5>+00123456789</h5>
+              </div>
+              <div class="Contact_email">
+                <label class="Contact_anime"><i class="zmdi zmdi-mail-send"></i></label>
+                <h5>demo@gmail.com</h5>
+              </div>
+              <div class="Contact_adress">
+                <label class="Contact_anime"><i class="zmdi zmdi-pin"></i></label>
+                <h5>3481 Melrose place, los angeles</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Contact section END -->
+    <!--  Footer  -->
+    <footer class="footer">
+      <div class="apacia">
+        <p>
+          Copy Right © By A-Shawky |
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <!--  Footer END -->
+</div>
+<!-- Wrapper END -->
+<!-- SCRIPTS -->
+<script type="module" src="./js/main.js"></script>
+<script src="./js/testimonial.js"></script>
+<script src="./js/portfolio.js"></script>
+<script src="./js/myservices.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/filtering.js"></script>
+<script src="./js/blog.js"></script>
+<!-- SCRIPTS END -->
+
+  </body>
+</html>

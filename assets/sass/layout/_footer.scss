@@ -1,0 +1,19 @@
+.footer {
+  background-color: #282830;
+  padding: 2rem;
+  border-top: 1px solid #e0e0e0;
+  color: #e0e0e0;
+  text-align: center;
+  display: block;
+  .apacia {
+    width: 100%;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    p {
+      color: #e0e0e0;
+    }
+  }
+}

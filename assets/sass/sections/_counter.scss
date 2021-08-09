@@ -1,0 +1,87 @@
+.counter {
+    background: url("../assets/img/counter/client.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    
+    .counter__extracontainer {
+        background:rgba(0, 0, 0, 0.6);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 5px;
+
+        @media (max-width: $xl) {
+         width: 98%;
+        }
+
+        .counter__container {
+            justify-content: center;
+            display: block;
+            width: 100%;
+            max-width: 1200px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            display: grid;
+
+            @media (max-width: $md) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            }
+
+            @media (max-width: $sm) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                }
+    
+            .counter__column {
+                width: 100%;
+                text-align: center;
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+    
+                .column__logo {
+                    margin-bottom: 30px;
+                    color: #9c27b0;
+                    font-size: 30px;
+                    height: 50px;
+                    align-items: center;
+                    text-align: center;
+                    transition: 0.2s;
+                    justify-content: center;
+                    display: flex;
+                }
+
+                .column__number {
+                    color: #fff;
+                    font-size: 1.5rem;
+                    margin-bottom: 20px;
+                    font-style: italic;
+                    font-weight: 800;
+                }
+    
+                .column__title {
+                    text-transform: uppercase;
+                    color: #9e9e9e;
+                    font-size: .9rem;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    // height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .title__div {
+                        display: inline-block;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
